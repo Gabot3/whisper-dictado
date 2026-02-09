@@ -36,6 +36,9 @@ Entornos corporativos
 🔔 Notificaciones de estado
 🔒 100 % local y privado
 🐧 Diseñado para Ubuntu / Linux
+
+
+
 🖥️ Requisitos del sistema
 Ubuntu 22.04+ (probado en 24.04)
 Python 3.10 o superior
@@ -75,6 +78,11 @@ Archivo de configuración:
 ~/.config/whisper-dictado/config.toml
 Ejemplo:
 use_llm = true
+
+<img width="501" height="93" alt="Captura desde 2026-02-09 18-28-59" src="https://github.com/user-attachments/assets/7d1794da-c9eb-4e4b-af12-0ab1cc173ae0" />
+<img width="548" height="369" alt="Captura desde 2026-02-09 18-29-09" src="https://github.com/user-attachments/assets/99d2f50d-3b58-4260-ae20-3455ff556300" />
+<img width="501" height="93" alt="Captura desde 2026-02-09 18-30-23" src="https://github.com/user-attachments/assets/28b11008-2971-4831-955e-4efa1761abfa" />
+
 
 
 
