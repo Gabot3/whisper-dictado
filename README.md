@@ -1,139 +1,167 @@
-📘 README.md — VERSIÓN 1.0 (PROFESIONAL + HUMANA)
-# Whisper Dictado 🎤🧠
+[README.md](https://github.com/user-attachments/files/25241892/README.md)
+# Whisper Dictado 🎤
 
-Dictado por voz en Linux utilizando **Whisper** y **LLM local (Ollama)**,  
-con atajo global y extensión para navegador.
+**Extensión de reconocimiento de voz para Brave Browser**
 
-Productividad, privacidad y software libre, todo en uno.
+Reduce el tiempo de escritura con esta extensión de reconocimiento de voz. Whisper Dictado te ayuda a escribir texto con la voz, transcribiendo en tiempo real y copiando automáticamente al portapapeles.
 
+---
 
-🚀 ¿Qué es Whisper Dictado?
-Whisper Dictado es una herramienta para Linux que te permite:
-Hablar por micrófono 🎙️
-Transcribir tu voz a texto usando Whisper
-(Opcional) Mejorar el texto con un modelo de lenguaje local
-Copiar automáticamente el resultado al portapapeles
-Pegar el texto en cualquier aplicación (mail, chat, documento, etc.)
-Todo el procesamiento se realiza localmente, sin enviar audio ni texto a la nube.
+## ✨ Características
 
-🎯 ¿Para qué sirve?
-Este proyecto nace de una necesidad real:
-Redactar correos profesionales más rápido
-Crear minutas y notas técnicas sin tipear
-Usar IA como herramienta diaria, no como curiosidad
-Mantener control total sobre los datos
-Ideal para:
-Profesionales IT
-Usuarios Linux
-Personas que valoran la privacidad
-Entornos corporativos
+- 🎤 **Reconocimiento de voz en tiempo real**
+- 🌍 **9+ idiomas soportados** (Español, English, Português, Français, Deutsch, Italiano)
+- 📋 **Auto-copia al portapapeles** al detener
+- ⏱️ **Timer de grabación** visible
+- 🎨 **HUD LED visual** para indicar estado
+- 🔊 **Visualizador de audio** animado
+- ⚡ **Sin instalación de dependencias** - 100% online
+- 🔒 **Privado** - Todo el procesamiento en tu navegador
 
-✨ Características principales
-🎙️ Dictado por voz con Whisper
-🧠 Mejora opcional de texto con LLM local (Ollama)
-⌨️ Atajo global configurable
-🌐 Extensión para Brave (compatible Chromium)
-🔔 Notificaciones de estado
-🔒 100 % local y privado
-🐧 Diseñado para Ubuntu / Linux
+---
 
+## 🚀 Instalación
 
+### Opción 1: Desde Chrome Web Store (próximamente)
 
-🖥️ Requisitos del sistema
-Ubuntu 22.04+ (probado en 24.04)
-Python 3.10 o superior
-arecord
-zenity
-notify-send
-Whisper
-Ollama (opcional, para LLM)
+Buscar "Whisper Dictado" en la Chrome Web Store.
 
+### Opción 2: Instalación manual
 
+1. Descargá la extensión desde [GitHub Releases](https://github.com/gabot3/whisper-dictado/releases)
+2. Descomprimí el archivo `.zip`
+3. Abrí Brave y andá a `brave://extensions/`
+4. Activá **Modo de desarrollador** (arriba a la derecha)
+5. Click en **Cargar extensión sin empaquetar**
+6. Seleccioná la carpeta descomprimida
+7. ✅ ¡Listo! El ícono aparecerá en la barra de herramientas
 
+---
 
+## 📖 Cómo usar
 
+### Uso básico:
 
-📦 Instalación
-Opción 1 — Paquete .deb (recomendado)
+1. Click en el ícono de **Whisper Dictado** 🎤
+2. Click en **INICIAR** (o presioná Espacio)
+3. Hablá claramente al micrófono
+4. El texto aparecerá en tiempo real
+5. Click en **DETENER** cuando termines
+6. El texto se copia automáticamente al portapapeles
+7. Pegá con **Ctrl+V** donde quieras
 
-sudo dpkg -i whisper-dictado.deb
+### Atajos de teclado:
 
-Luego cerrar sesión o ejecutar:
+- `Espacio` - Iniciar/Detener grabación
+- `Ctrl+C` - Copiar texto manualmente
+- `Escape` - Detener grabación
 
-systemctl --user daemon-reload
+### Cambiar idioma:
 
-systemctl --user start whisper-server.service
+Seleccioná tu idioma del menú desplegable antes de grabar.
 
+---
 
-Próximamente disponible en la sección Releases.
-Opción 2 — Instalación manual (desarrolladores)
-git clone https://github.com/gabot3/whisper-dictado.git
-cd whisper-dictado
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python3 dictar.py
+## 🎨 Interfaz
 
-▶️ Uso
-Ejecutar Whisper Dictado (atajo global o extensión)
-Comenzar a hablar 🎙️
-Presionar ACEPTAR para detener la grabación
-Esperar la notificación de “Transcripción lista”
-Pegar el texto con Ctrl + V
-🧠 Uso de LLM (opcional)
-Whisper Dictado puede mejorar el texto utilizando un modelo local.
-Archivo de configuración:
-~/.config/whisper-dictado/config.toml
-Ejemplo:
-use_llm = true
+- **LED Verde** 🟢 - Listo para grabar
+- **LED Naranja pulsante** 🟠 - Grabando
+- **Timer** ⏱️ - Tiempo de grabación en curso
+- **Barras de audio** 📊 - Visualización en tiempo real
 
-<img width="548" height="369" alt="Captura desde 2026-02-09 18-29-09" src="https://github.com/user-attachments/assets/99d2f50d-3b58-4260-ae20-3455ff556300" />
-<img width="501" height="93" alt="Captura desde 2026-02-09 18-30-23" src="https://github.com/user-attachments/assets/28b11008-2971-4831-955e-4efa1761abfa" />
+---
 
+## 🌍 Idiomas soportados
 
+- 🇦🇷 Español (Argentina)
+- 🇪🇸 Español (España)
+- 🇲🇽 Español (México)
+- 🇺🇸 English (US)
+- 🇬🇧 English (UK)
+- 🇧🇷 Português (Brasil)
+- 🇫🇷 Français
+- 🇩🇪 Deutsch
+- 🇮🇹 Italiano
 
+---
 
+## 💡 Consejos para mejores resultados
 
-Modelos recomendados:
-phi3 → rápido y eficiente en CPU
-llama3 → mejor calidad, más lento
-El prompt puede modificarse directamente en dictar.py.
+- Usá auriculares o un micrófono externo
+- Hablá claramente y a un ritmo moderado
+- Evitá ruido de fondo
+- Asegurate de tener conexión a internet
+- Concedé permisos de micrófono al navegador
 
-🔐 Privacidad
-El audio se graba de forma temporal
-El archivo de audio se elimina automáticamente
-No se envía información a internet
-El LLM se ejecuta de forma local
-Tus datos son tuyos.
+---
 
-🧩 Arquitectura (resumen)
-Micrófono
-   ↓
-Audio temporal
-   ↓
-Whisper (STT)
-   ↓
-LLM local (opcional)
-   ↓
-Portapapeles
+## 🔧 Requisitos
 
+- **Navegador:** Brave, Chrome, Edge, Opera (Chromium-based)
+- **Permisos:** Micrófono
+- **Conexión:** Internet (para modo online)
 
-📄 Licencia
-Este proyecto es freeware y open source.
-Licencia recomendada: MIT
+---
 
+## 🐛 Solución de problemas
 
-👥 Créditos
-Idea, testing y concepto: Gabot3
-Desarrollo y arquitectura: ChatGPT
-Tecnologías: Whisper, Ollama, Python, Linux
+### "No se detectó audio"
+- Verificá los permisos de micrófono en `brave://settings/content/microphone`
+- Asegurate de que el micrófono esté conectado y funcionando
 
-❤️ Filosofía
-Este proyecto fue creado con una idea clara:
-Usar la inteligencia artificial como una herramienta real,
-cotidiana y al servicio de las personas,
-respetando la privacidad y el software libre.
+### "Tu navegador no soporta reconocimiento de voz"
+- Usá una versión actualizada de Brave/Chrome
+- Web Speech API requiere navegadores Chromium
 
-Para el mundo con cariño!! 
+### El texto no se copia
+- Verificá los permisos de portapapeles
+- Probá copiar manualmente con el botón "Copiar"
 
-Gabot3
+---
+
+## 🛣️ Roadmap
+
+- [ ] Modo offline con Whisper WASM
+- [ ] Personalización de atajos
+- [ ] Historial de transcripciones
+- [ ] Exportar a archivo
+- [ ] Puntuación automática
+- [ ] Comandos de voz (negrita, nueva línea, etc.)
+
+---
+
+## 🤝 Contribuir
+
+¡Contribuciones son bienvenidas!
+
+1. Fork el repositorio
+2. Creá una branch: `git checkout -b feature/nueva-funcionalidad`
+3. Commit tus cambios: `git commit -m 'Agregar nueva funcionalidad'`
+4. Push a la branch: `git push origin feature/nueva-funcionalidad`
+5. Abrí un Pull Request
+
+---
+
+## 📄 Licencia
+
+MIT License - Ver [LICENSE](LICENSE) para más detalles.
+
+---
+
+## ❤️ Créditos
+
+- **Creador:** Gabot3
+- **Desarrollo:** Colaboración con Claude (Anthropic)
+- **Tecnologías:** Web Speech API, Chrome Extensions API, HTML/CSS/JS
+
+---
+
+## 📞 Contacto
+
+- **GitHub:** [@gabot3](https://github.com/gabot3)
+- **Email:** gabytoska@gmail.com
+- **Issues:** [GitHub Issues](https://github.com/gabot3/whisper-dictado/issues)
+
+---
+
+**Hecho con ❤️ en Argentina para la comunidad mundial 🌎**
